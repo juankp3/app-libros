@@ -7,6 +7,8 @@
 
 import UIKit
 
+var databasePointer: OpaquePointer?
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -14,6 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+//        if let dbPointer = DBHelper.getDatabasePointer(databaseName: "librosBD.db") {
+//            databasePointer = dbPointer
+//        }
+        
         return true
     }
 
